@@ -12,6 +12,8 @@ export const FEEDS = [
   { name: 'The Record', url: 'https://therecord.media/feed/' },
   { name: 'The Register', url: 'https://www.theregister.com/security/headlines.atom' },
   { name: 'Security NEXT', url: 'https://www.security-next.com/feed' },
+  { name: 'Security Affairs', url: 'https://securityaffairs.com/feed' },
+  { name: 'SOCRadar', url: 'https://socradar.io/blog/feed/' },
 ];
 
 // 何時間前までの記事を見るか（毎朝1回動かすので、少し重なるように26時間）

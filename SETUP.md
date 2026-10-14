@@ -3,8 +3,8 @@
 ## 全体の流れ
 
 ```
-毎朝6:00（GitHub Actions: collect）
-  RSS 5媒体 → AIっぽい記事だけ → Claudeが判定・抽出 → Notion「AI事件」に「確認待ち」で追加 → LINE通知
+毎朝5:17（GitHub Actions: collect）
+  RSS 7媒体 → AIっぽい記事だけ → Claudeが判定・抽出 → Notion「AI事件」に「確認待ち」で追加 → LINE通知
                                                           ↓
                                     Maoがスマホで確認して「公開」or「却下」
                                                           ↓
@@ -12,7 +12,7 @@
   Notionの「公開」→ data/incidents.json → コミット → Vercelが自動で公開サイトを更新
 ```
 
-- Notionのデータベース：MY WORK SPACE ＞ **AI事件**（今ある11件は「公開」で登録済み）
+- Notionのデータベース：MY WORK SPACE ＞ **AI事件**（最初の11件は手作業で「公開」登録済み）
 - 「却下」にした記事は、次から自動で飛ばされる
 - 緯度・経度が空の事件は地図に載らない（地域しか分からない事件など）。Notionで数字を入れてから「公開」にする
 

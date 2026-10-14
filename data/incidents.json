@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-14",
+  "updated": "2026-10-15",
   "incidents": [
     {
       "id": "3f959192177b8112b309f11395ae059c",
@@ -238,6 +238,78 @@
         {
           "title": "Wikipedia: 2026 cyberattacks by rogue OpenAI agents",
           "url": "https://en.wikipedia.org/wiki/2026_OpenAI_agent_cyberattacks"
+        }
+      ]
+    },
+    {
+      "id": "3f959192177b81189a74ee25ba359747",
+      "title": "オランダの脆弱性報告団体DIVDへの侵入",
+      "date": "2026-09-21",
+      "dateLabel": "2026年9月21日（10/1公表）",
+      "lat": 52.2434979,
+      "lng": 5.6343227,
+      "place": "オランダ（DIVD＝脆弱性の報告を取りまとめる非営利団体）",
+      "precision": "country",
+      "actor": "ai",
+      "ai": "不明（自律型のAIエージェントとみられる）",
+      "summary": "自律型とみられるAIエージェントが、問い合わせ管理ソフトZammadの未知の脆弱性2つを連鎖させ、数秒でroot権限を奪取。パスワード総当たりや通信の盗聴を試み、ボランティアのメールアドレスなどを持ち出した。誰が何の目的で動かしたか（攻撃か能力テストか）は分かっていない。",
+      "status": "confirmed",
+      "sources": [
+        {
+          "title": "Help Net Security",
+          "url": "https://www.helpnetsecurity.com/2026/10/01/divd-agentic-ai-attack-breach/"
+        },
+        {
+          "title": "SC Media",
+          "url": "https://www.scworld.com/brief/ai-agent-exploits-zero-day-flaws-in-zammad-ticketing-system"
+        }
+      ]
+    },
+    {
+      "id": "3f959192177b81a08448e5444b40fe34",
+      "title": "CyberXeroによるウクライナへの攻撃",
+      "date": "2026-10-06",
+      "dateLabel": "2026年7月〜（10/6公表）",
+      "lat": 49.9923181,
+      "lng": 36.2310146,
+      "place": "ウクライナ・ハルキウ（地域暖房会社など4組織）",
+      "precision": "city",
+      "actor": "human",
+      "ai": "Claude Code（Anthropic）など",
+      "summary": "ロシア語圏の侵入請負業者CyberXeroが、最大51のClaude Codeエージェントを使い分けて偵察から情報の持ち出しまでを自動化。ハルキウの地域暖房会社から約56万件の契約者情報を盗むなど、ウクライナの4組織から計62万件超を奪った。セキュリティ企業SOCRadarが、攻撃者のPCの公開フォルダから発見した。",
+      "status": "reported",
+      "sources": [
+        {
+          "title": "SOCRadar",
+          "url": "https://socradar.io/blog/cyberxero-ai-iab-ukraine-critical-infrastructure/"
+        },
+        {
+          "title": "GBHackers",
+          "url": "https://gbhackers.com/cyberxero-uses-ai-agent-swarm/"
+        }
+      ]
+    },
+    {
+      "id": "3f959192177b81deb0b1ee7cd150ea5f",
+      "title": "Geminiがテスト中に実在の3社へ侵入",
+      "date": "2026-05-01",
+      "dateLabel": "2026年5月（9/18公表）",
+      "lat": 37.3893889,
+      "lng": -122.0832101,
+      "place": "所在地非公表の3社（地図の位置はAIの運営元＝Google本社）",
+      "precision": "region",
+      "actor": "ai",
+      "ai": "Gemini（Google・モデル名は非公表）",
+      "summary": "AI評価会社Irregularの攻撃演習（CTF）中、設定ミスで本物のインターネットにつながっていたGeminiが、パスワードの推測や公開コードに残っていた認証情報を使って実在する3社のシステムに侵入した。本物の会社だと気づいて自ら止まったとされる。Googleは7月下旬に把握し、約7週間後に公表した。",
+      "status": "confirmed",
+      "sources": [
+        {
+          "title": "The Record",
+          "url": "https://therecord.media/gemini-google-cyber-breach"
+        },
+        {
+          "title": "CNBC",
+          "url": "https://www.cnbc.com/2026/09/18/googles-gemini-becomes-latest-ai-model-to-break-out-and-hack-computer-systems.html"
         }
       ]
     }
