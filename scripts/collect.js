@@ -33,6 +33,7 @@ console.log(`うち未処理: ${fresh.length}件`);
 
 // ③ 1件ずつClaudeに判定させ、事件ならNotionに追加
 const added = [];
+let failed = 0;
 for (const article of fresh) {
   try {
     const result = await classify(article, known.titles);
@@ -55,6 +56,7 @@ for (const article of fresh) {
     console.log(`  ✓ ${result.title}${coords ? '' : '（位置は手入力が必要）'}`);
   } catch (err) {
     // 1件失敗しても、残りの記事は続ける
+    failed++;
     const detail = err instanceof Anthropic.APIError ? `Claude APIエラー ${err.status}` : err.message;
     console.error(`  ⚠ 失敗: ${article.title}（${detail}）`);
   }
@@ -70,4 +72,10 @@ if (added.length > 0 && !judgeOnly) {
     'Notionで内容を確かめて「公開」にしてください',
     NOTION_DATABASE_URL,
   ].join('\n'));
+}
+
+// 全部失敗していたら、鍵の間違いなどを疑って「失敗」で終わる（GitHub Actionsで赤くなって気づける）
+if (fresh.length > 0 && failed === fresh.length) {
+  console.error(`⚠ ${failed}件すべて失敗しました。ANTHROPIC_API_KEY などの設定を確認してください`);
+  process.exitCode = 1;
 }
