@@ -71,28 +71,96 @@ async function init() {
     .map((d) => ({ ...d, year: d.date.slice(0, 4), month: d.date.slice(5, 7) }))
     .sort((a, b) => b.date.localeCompare(a.date));   // 新しい順
 
-  buildYearSelect();
+  buildYearDropdown();
   buildList();
   render();
 }
 
 // ===== 年のドロップダウンをつくる（「すべての期間」＋データにある年を新しい順） =====
-function buildYearSelect() {
+// ブラウザ標準の <select> は開いた一覧の見た目を変えられないので、ボタン＋一覧で自作する
+//
+//   [ボタン] ──クリック/↓キー──→ [一覧が開く] ──クリック/Enter──→ 年が決まる → render()
+//                                       └──Esc/外をクリック──→ 閉じるだけ
+function buildYearDropdown() {
   const years = [...new Set(incidents.map((d) => d.year))].sort().reverse();
   year = 'all';   // 最初は全部見せる
 
-  const select = document.getElementById('year');
-  for (const y of ['all', ...years]) {
-    const option = el('option', '', y === 'all' ? 'すべての期間' : `${y}年`);
-    option.value = y;
-    select.append(option);
-  }
-  select.value = year;
-  select.addEventListener('change', () => {
-    year = select.value;
-    month = 'all';   // 年を変えたら月は「全月」に戻す
-    render();
+  const button = document.getElementById('yearButton');
+  const list = document.getElementById('yearList');
+  const options = ['all', ...years].map((y) => ({
+    value: y,
+    label: y === 'all' ? 'すべての期間' : `${y}年`,
+    count: y === 'all' ? incidents.length : incidents.filter((d) => d.year === y).length,
+  }));
+
+  // 一覧の中身をつくる（✓・名前・件数）
+  options.forEach((o, i) => {
+    const li = el('li', 'option');
+    li.id = `year-option-${i}`;
+    li.setAttribute('role', 'option');
+    li.append(el('span', 'check', '✓'), el('span', '', o.label), el('span', 'option-count', `${o.count}件`));
+    li.addEventListener('mouseenter', () => setActive(i));
+    li.addEventListener('click', () => choose(i));
+    list.append(li);
   });
+
+  let active = 0;   // 矢印キーで今どこを指しているか
+
+  function setActive(i) {
+    active = (i + options.length) % options.length;   // 端まで行ったら反対側へ回る
+    list.querySelectorAll('.option').forEach((li, j) => li.classList.toggle('is-active', j === active));
+    list.setAttribute('aria-activedescendant', `year-option-${active}`);
+  }
+
+  function open() {
+    list.hidden = false;
+    button.setAttribute('aria-expanded', 'true');
+    setActive(options.findIndex((o) => o.value === year));
+    list.focus();
+  }
+
+  // returnFocus：キーボードで閉じたときはボタンに戻す。外をクリックしたときは戻さない
+  function close(returnFocus = true) {
+    list.hidden = true;
+    button.setAttribute('aria-expanded', 'false');
+    if (returnFocus) button.focus();
+  }
+
+  function choose(i) {
+    year = options[i].value;
+    month = 'all';   // 年を変えたら月は「全月」に戻す
+    showValue();
+    close();
+    render();
+  }
+
+  // ボタンの文字と、一覧の ✓ を今の年に合わせる
+  function showValue() {
+    document.getElementById('yearValue').textContent = options.find((o) => o.value === year).label;
+    list.querySelectorAll('.option').forEach((li, j) => li.setAttribute('aria-selected', String(options[j].value === year)));
+  }
+
+  button.addEventListener('click', () => (list.hidden ? open() : close()));
+  button.addEventListener('keydown', (e) => {
+    if (e.key === 'ArrowDown' || e.key === 'ArrowUp') {
+      e.preventDefault();
+      open();
+    }
+  });
+  list.addEventListener('keydown', (e) => {
+    if (e.key === 'ArrowDown') setActive(active + 1);
+    else if (e.key === 'ArrowUp') setActive(active - 1);
+    else if (e.key === 'Enter' || e.key === ' ') choose(active);
+    else if (e.key === 'Escape' || e.key === 'Tab') close();
+    else return;
+    e.preventDefault();
+  });
+  // 一覧の外をクリックしたら閉じる
+  document.addEventListener('click', (e) => {
+    if (!list.hidden && !e.target.closest('.dropdown')) close(false);
+  });
+
+  showValue();
 }
 
 // ===== 画面を今の状態に合わせて描き直す =====
