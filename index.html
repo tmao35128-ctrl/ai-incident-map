@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI事件マップ</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- 地球儀を描く場所 -->
+  <div id="globe"></div>
+
+  <!-- 左上：タイトルと凡例 -->
+  <header class="hud">
+    <h1>AI事件マップ</h1>
+    <p class="sub">AIが関わったサイバー事件（公表された情報のみ）</p>
+    <ul class="legend">
+      <li><span class="dot dot-ai"></span>AIが自分で起こした</li>
+      <li><span class="dot dot-human"></span>人間がAIを悪用した</li>
+    </ul>
+  </header>
+
+  <!-- 右：事件の一覧と詳細 -->
+  <aside class="panel">
+    <div id="detail" class="detail" hidden></div>
+    <p id="count" class="count"></p>
+    <ol id="list" class="list"></ol>
+  </aside>
+
+  <!-- 下：期間を選ぶバー（年はドロップダウン、月はボタン） -->
+  <footer class="period">
+    <label for="year" class="period-label">年</label>
+    <div class="select-wrap">
+      <select id="year" aria-label="年"></select>
+    </div>
+    <div id="months" class="months" role="group" aria-label="月"></div>
+  </footer>
+
+  <script src="https://unpkg.com/globe.gl@2.46.2/dist/globe.gl.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

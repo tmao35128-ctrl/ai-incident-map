@@ -1,0 +1,24 @@
+# 毎朝6:00（日本時間）に新着を集めて、Notionに「確認待ち」で追加する
+name: collect
+
+on:
+  schedule:
+    - cron: '0 21 * * *'   # UTCの21:00 = 日本時間の6:00
+  workflow_dispatch:         # GitHubの画面（スマホアプリでも可）から手動で動かせる
+
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci
+      - run: npm run collect
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
+          LINE_CHANNEL_ACCESS_TOKEN: ${{ secrets.LINE_CHANNEL_ACCESS_TOKEN }}
+          LINE_USER_ID: ${{ secrets.LINE_USER_ID }}

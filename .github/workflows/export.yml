@@ -1,0 +1,36 @@
+# 3時間おきに、Notionで「公開」にした事件を data/incidents.json に書き出す
+# 中身が変わったときだけコミットする → Vercelが自動で公開サイトを更新する
+name: export
+
+on:
+  schedule:
+    - cron: '0 */3 * * *'
+  workflow_dispatch:         # 「公開」にした直後に反映したいときは手動で動かす
+
+permissions:
+  contents: write            # incidents.json をコミットするため
+
+jobs:
+  export:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci
+      - run: npm run export
+        env:
+          NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
+      - name: 変わっていたらコミット
+        run: |
+          if git diff --quiet data/incidents.json; then
+            echo "変更なし"
+          else
+            git config user.name "github-actions[bot]"
+            git config user.email "41898283+github-actions[bot]@users.noreply.github.com"
+            git add data/incidents.json
+            git commit -m "Update incidents from Notion"
+            git push
+          fi

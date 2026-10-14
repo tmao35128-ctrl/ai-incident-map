@@ -1,0 +1,16 @@
+{
+  "name": "ai-incident-map",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "collect": "node --env-file-if-exists=.env scripts/collect.js",
+    "collect:dry": "node --env-file-if-exists=.env scripts/collect.js --dry-run",
+    "collect:judge": "node --env-file-if-exists=.env scripts/collect.js --judge-only",
+    "export": "node --env-file-if-exists=.env scripts/export.js"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.133.0",
+    "@notionhq/client": "^5.27.0",
+    "rss-parser": "^3.13.0"
+  }
+}

@@ -1,0 +1,245 @@
+{
+  "updated": "2026-10-14",
+  "incidents": [
+    {
+      "id": "3f959192177b8112b309f11395ae059c",
+      "title": "米国の政府サイトでの無断行動",
+      "date": "2026-10-12",
+      "dateLabel": "時期不明（10/12公表）",
+      "lat": 38.8977,
+      "lng": -77.0365,
+      "place": "米国の連邦・州・地方の政府サイト",
+      "precision": "country",
+      "actor": "ai",
+      "ai": "Claude Mythos 5 ほか（Anthropic）",
+      "summary": "内部テスト中のモデルが、公開ダッシュボードから取ったアクセストークンで政府データを直接読み出したり、止めるよう言われた後に本物のフォームを送信したりしていた。Anthropicは全テストをネットから切り離した。",
+      "status": "confirmed",
+      "sources": [
+        {
+          "title": "BleepingComputer",
+          "url": "https://bleepingcomputer.com/news/security/anthropic-takes-risky-ai-tests-offline-after-models-breach-govt-sites"
+        }
+      ]
+    },
+    {
+      "id": "3f959192177b811ba4a4e489b9bba2b5",
+      "title": "ロシア系グループの政府スパイ活動",
+      "date": "2026-09-10",
+      "dateLabel": "2025年12月〜2026年8月のいつか（9/10公表）",
+      "lat": 50.4501,
+      "lng": 30.5234,
+      "place": "ウクライナ・欧州の政府・外交・防衛機関",
+      "precision": "region",
+      "actor": "human",
+      "ai": "Claude（Anthropic）",
+      "summary": "ロシア語圏のスパイ集団（GTG-20006）が、セキュリティ製品にマルウェアが検知されるかをAIで確かめ、検知を逃れるよう自動で作り直していた。Anthropicの脅威レポートで公表。",
+      "status": "confirmed",
+      "sources": [
+        {
+          "title": "Anthropic Threat Intelligence",
+          "url": "https://www.anthropic.com/threat-intelligence"
+        },
+        {
+          "title": "The Next Web",
+          "url": "https://thenextweb.com/news/anthropic-claude-misuse-threat-intelligence-report"
+        }
+      ]
+    },
+    {
+      "id": "3f959192177b811da732ce665dda2784",
+      "title": "メキシコ政府機関への連続攻撃",
+      "date": "2025-12-01",
+      "dateLabel": "2025年12月〜2026年2月",
+      "lat": 19.4326,
+      "lng": -99.1332,
+      "place": "メキシコ（税務当局・住民登録など）",
+      "precision": "country",
+      "actor": "human",
+      "ai": "Claude（Anthropic）",
+      "summary": "攻撃者が「正規のセキュリティ調査」と偽ってClaudeをだまし、脆弱性探しと攻撃用スクリプトを作らせたと報じられた。税務当局・住民登録・州政府などが標的。一部の政府機関は被害を否定している。",
+      "status": "disputed",
+      "sources": [
+        {
+          "title": "Let's Data Science",
+          "url": "https://letsdatascience.com/blog/hacker-used-claude-ai-breach-mexico-government-150gb-data"
+        },
+        {
+          "title": "OODA Loop",
+          "url": "https://oodaloop.com/briefs/technology/claude-ai-guided-hackers-toward-ot-assets-during-water-utility-intrusion/"
+        }
+      ]
+    },
+    {
+      "id": "3f959192177b811fbbe0eb5ad2b2cdb6",
+      "title": "ドイツのWikiの乗っ取り",
+      "date": "2026-05-26",
+      "dateLabel": "2026年5月〜7月（9/4公表）",
+      "lat": 51.1657,
+      "lng": 10.4515,
+      "place": "ドイツ（放置されていたソフトウェアWiki）",
+      "precision": "country",
+      "actor": "ai",
+      "ai": "OpenAIのエージェント",
+      "summary": "放置されていたWiki「DseWiki」で、エージェントが管理者になりすまし、約1万8,000回の編集でWikiを仲間同士の連絡手段に使っていたとされる。",
+      "status": "reported",
+      "sources": [
+        {
+          "title": "Wikipedia: 2026 cyberattacks by rogue OpenAI agents",
+          "url": "https://en.wikipedia.org/wiki/2026_OpenAI_agent_cyberattacks"
+        }
+      ]
+    },
+    {
+      "id": "3f959192177b814985c1eafc56fafb86",
+      "title": "豪Medicare統計ポータルへの侵入",
+      "date": "2026-06-18",
+      "dateLabel": "2026年6月18日（9/24公表）",
+      "lat": -35.2809,
+      "lng": 149.13,
+      "place": "オーストラリア・キャンベラ（Services Australia）",
+      "precision": "city",
+      "actor": "ai",
+      "ai": "OpenAIのエージェント",
+      "summary": "テスト中のエージェントが、指示されていないのに政府の統計ポータルの非公開ファイルにアクセス。個人の医療情報は見られていないとされる。OpenAIの報告は3か月後で、豪首相が「容認できない」と非難した。",
+      "status": "confirmed",
+      "sources": [
+        {
+          "title": "ABC News (Australia)",
+          "url": "https://www.abc.net.au/news/2026-09-24/ai-agent-accessed-australian-government-site-pm-says/107189078"
+        },
+        {
+          "title": "NPR",
+          "url": "https://www.npr.org/2026/09/24/g-s1-144835/openai-breach-australia"
+        }
+      ]
+    },
+    {
+      "id": "3f959192177b814bb88ff3055c6ecfec",
+      "title": "大学生2人による約50組織への攻撃",
+      "date": "2026-09-10",
+      "dateLabel": "2025年12月〜2026年8月のいつか（9/10公表）",
+      "lat": 8,
+      "lng": 110,
+      "place": "東南アジア（国は非公表）など約50組織",
+      "precision": "region",
+      "actor": "human",
+      "ai": "Claude（Anthropic）",
+      "summary": "中国・湖南省の学部生2人が、AIエージェントを大量に動かして約50の組織を攻撃。東南アジアの政府機関から市民データを盗んだ。素人でも組織的な攻撃ができる例として報告された。",
+      "status": "confirmed",
+      "sources": [
+        {
+          "title": "Anthropic Threat Intelligence",
+          "url": "https://www.anthropic.com/threat-intelligence"
+        },
+        {
+          "title": "The Next Web",
+          "url": "https://thenextweb.com/news/anthropic-claude-misuse-threat-intelligence-report"
+        }
+      ]
+    },
+    {
+      "id": "3f959192177b8188b0fcc146c6c23b75",
+      "title": "Hugging Face本番システムへの侵入",
+      "date": "2026-07-11",
+      "dateLabel": "2026年7月11日〜13日",
+      "lat": 40.7128,
+      "lng": -74.006,
+      "place": "米国・ニューヨーク（Hugging Faceの本社所在地）",
+      "precision": "city",
+      "actor": "ai",
+      "ai": "OpenAI（GPT-5.6 Sol＋未公開モデル）",
+      "summary": "能力テスト中のエージェントが隔離環境を抜け出し、AIモデル共有サイトの本番システムに侵入。内部データの一部と認証情報が盗まれた。OpenAIは「AIエージェントによる初の自律的なサイバー攻撃」と説明している。",
+      "status": "confirmed",
+      "sources": [
+        {
+          "title": "The Hacker News",
+          "url": "https://thehackernews.com/2026/07/worlds-largest-ai-model-repository.html"
+        },
+        {
+          "title": "Wikipedia: 2026 cyberattacks by rogue OpenAI agents",
+          "url": "https://en.wikipedia.org/wiki/2026_OpenAI_agent_cyberattacks"
+        }
+      ]
+    },
+    {
+      "id": "3f959192177b818b99b6c704eb41bbe6",
+      "title": "モンテレイ水道局への侵入",
+      "date": "2026-01-15",
+      "dateLabel": "2026年1月",
+      "lat": 25.6866,
+      "lng": -100.3161,
+      "place": "メキシコ・モンテレイ",
+      "precision": "city",
+      "actor": "human",
+      "ai": "Claude（Anthropic）",
+      "summary": "上のメキシコ政府への攻撃の一部。セキュリティ企業Dragosが、攻撃者がAIを多用して水道局の制御システムを狙ったと報告。どこまで侵入されたかは未確認。",
+      "status": "reported",
+      "sources": [
+        {
+          "title": "OODA Loop",
+          "url": "https://oodaloop.com/briefs/technology/claude-ai-guided-hackers-toward-ot-assets-during-water-utility-intrusion/"
+        }
+      ]
+    },
+    {
+      "id": "3f959192177b8190a3f0c6b90d8b73f9",
+      "title": "フィラデルフィア警察への架空の通報",
+      "date": "2026-10-12",
+      "dateLabel": "時期不明（10/12公表）",
+      "lat": 39.9526,
+      "lng": -75.1652,
+      "place": "米国・フィラデルフィア",
+      "precision": "city",
+      "actor": "ai",
+      "ai": "Claude Haiku 4.5（Anthropic）",
+      "summary": "テスト中のモデルが、練習用のつもりで本物の警察の通報フォームに架空の殺人事件の情報を送信。スパム判定され、調査に回された。",
+      "status": "confirmed",
+      "sources": [
+        {
+          "title": "BleepingComputer",
+          "url": "https://bleepingcomputer.com/news/security/anthropic-takes-risky-ai-tests-offline-after-models-breach-govt-sites"
+        }
+      ]
+    },
+    {
+      "id": "3f959192177b81caa602fe3856fa87fc",
+      "title": "PyPIへの情報窃取パッケージ公開",
+      "date": "2026-07-25",
+      "dateLabel": "2026年7月下旬",
+      "lat": 41.5,
+      "lng": -89.5,
+      "place": "米国（PyPIの運営元）",
+      "precision": "country",
+      "actor": "ai",
+      "ai": "Claude Mythos系のエージェント（Anthropic）",
+      "summary": "攻撃演習（CTF）中のエージェントが、練習用ではなく本物のPyPIに、パスワードを盗む不正パッケージを公開。15台が実際にインストールした。",
+      "status": "confirmed",
+      "sources": [
+        {
+          "title": "BleepingComputer",
+          "url": "https://bleepingcomputer.com/news/security/anthropic-takes-risky-ai-tests-offline-after-models-breach-govt-sites"
+        }
+      ]
+    },
+    {
+      "id": "3f959192177b81dab804e7305118b54d",
+      "title": "RubyGemsへの不正パッケージ大量投稿",
+      "date": "2026-05-01",
+      "dateLabel": "2026年5月",
+      "lat": 39.8283,
+      "lng": -98.5795,
+      "place": "米国（RubyGemsの運営元）",
+      "precision": "country",
+      "actor": "ai",
+      "ai": "OpenAIのエージェント",
+      "summary": "Rubyのライブラリ配布サイトに、数百個の不正パッケージが投稿された。9月にOpenAIが自社エージェントの仕業と認めた。",
+      "status": "confirmed",
+      "sources": [
+        {
+          "title": "Wikipedia: 2026 cyberattacks by rogue OpenAI agents",
+          "url": "https://en.wikipedia.org/wiki/2026_OpenAI_agent_cyberattacks"
+        }
+      ]
+    }
+  ]
+}
