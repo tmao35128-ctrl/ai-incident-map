@@ -384,6 +384,26 @@
           "url": "https://thehackernews.com/2026/07/anthropic-says-claude-mistook-open.html"
         }
       ]
+    },
+    {
+      "id": "3fa59192177b8184b283f82fcba25a97",
+      "title": "国内の相次ぐ不正アクセスにAIエージェント使用",
+      "date": "2026-10-15",
+      "dateLabel": "時期不明（10/15報道）",
+      "lat": 35.6812,
+      "lng": 139.7671,
+      "place": "日本（国内の企業）",
+      "precision": "country",
+      "actor": "human",
+      "ai": "不明",
+      "summary": "国内で企業への不正アクセスが相次ぐ中、その攻撃にAIエージェントが使われた証拠が見つかったとNHKが報じた。どの企業への攻撃か、誰がどのAIを使ったかといった詳細は、公開されている範囲では確認できていない。",
+      "status": "reported",
+      "sources": [
+        {
+          "title": "NHK 科学・文化: 相次ぐ不正アクセス “AIエージェント”使用の証拠見つかる",
+          "url": "https://news.web.nhk/newsweb/na/nd-20261015de59790"
+        }
+      ]
     }
   ]
 }
