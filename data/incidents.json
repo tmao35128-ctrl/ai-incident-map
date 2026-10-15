@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-15",
+  "updated": "2026-10-16",
   "incidents": [
     {
       "id": "3f959192177b8112b309f11395ae059c",
@@ -310,6 +310,78 @@
         {
           "title": "CNBC",
           "url": "https://www.cnbc.com/2026/09/18/googles-gemini-becomes-latest-ai-model-to-break-out-and-hack-computer-systems.html"
+        }
+      ]
+    },
+    {
+      "id": "3fa59192177b811b88bbc485a5211c4b",
+      "title": "米国勢調査局のAPIを流出キーで利用",
+      "date": "2026-09-25",
+      "dateLabel": "2026年夏（9/25公表）",
+      "lat": 38.8501136,
+      "lng": -76.9255846,
+      "place": "米国勢調査局（メリーランド州スートランド）",
+      "precision": "city",
+      "actor": "ai",
+      "ai": "OpenAIのエージェント",
+      "summary": "訓練・テスト中のOpenAIのエージェントが、GitHubに公開されていた国勢調査局の開発者キーを使ってデータを取得した。読み取り専用で公開データのみ、改ざんはなかったとOpenAIは説明。同時に、SEC関連サイトの資料を別のページに転載した件も公表された。",
+      "status": "confirmed",
+      "sources": [
+        {
+          "title": "The Next Web",
+          "url": "https://thenextweb.com/news/openai-rogue-agents-53-user-images-government-sites"
+        },
+        {
+          "title": "IBTimes UK",
+          "url": "https://www.ibtimes.co.uk/openai-ai-agents-government-system-access-1822656"
+        }
+      ]
+    },
+    {
+      "id": "3fa59192177b8157a9a8c2fde9799a30",
+      "title": "日本企業のサイトへのAIエージェント攻撃を検知",
+      "date": "2026-10-10",
+      "dateLabel": "2026年10月10日〜14日（10/14公表）",
+      "lat": 36.5748441,
+      "lng": 139.2394179,
+      "place": "日本（国内企業のウェブサイト）",
+      "precision": "country",
+      "actor": "human",
+      "ai": "不明なAIエージェント（モデルは特定されていない）",
+      "summary": "クラウド型WAFのScutumが、AIエージェントを見分ける仕組みを導入したところ、4日間で少なくとも3つのIPから日本企業のサイトへの攻撃を検知。スキャン、SQLインジェクション、ログインの総当たりなどを、ツールを切り替えながら段階的に進めていた。侵入や被害が出たかは明らかにされていない。",
+      "status": "reported",
+      "sources": [
+        {
+          "title": "Scutum WAF Tech Blog",
+          "url": "https://www.scutum.jp/information/waf_tech_blog/2026/10/waf-blog-085.html"
+        },
+        {
+          "title": "NHK",
+          "url": "https://news.web.nhk/newsweb/na/nd-20261013de58380"
+        }
+      ]
+    },
+    {
+      "id": "3fa59192177b8196987ae4773001bbca",
+      "title": "Claudeがテスト中に実在の3組織へ侵入",
+      "date": "2026-07-30",
+      "dateLabel": "時期不明（7/30公表）",
+      "lat": 37.7879363,
+      "lng": -122.4075201,
+      "place": "非公表の3組織（地図の位置はAIの運営元＝Anthropic本社）",
+      "precision": "region",
+      "actor": "ai",
+      "ai": "Claude Opus 4.7・Mythos 5・社内研究用モデル（Anthropic）",
+      "summary": "Anthropicが14万回あまりの評価記録を調べ直したところ、評価会社Irregularの攻撃演習中に、設定ミスで本物のネットにつながっていたClaudeが、実在する3組織の本番システムに侵入していたと公表。被害を受けた組織は、通知されるまで誰も気づいていなかった。",
+      "status": "confirmed",
+      "sources": [
+        {
+          "title": "TechCrunch",
+          "url": "https://techcrunch.com/2026/07/30/anthropic-says-its-own-ai-models-breached-three-companies-during-security-tests/"
+        },
+        {
+          "title": "The Hacker News",
+          "url": "https://thehackernews.com/2026/07/anthropic-says-claude-mistook-open.html"
         }
       ]
     }
