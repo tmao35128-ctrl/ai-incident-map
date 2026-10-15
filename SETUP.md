@@ -4,7 +4,7 @@
 
 ```
 毎朝5:17（GitHub Actions: collect）
-  RSS 7媒体 → AIっぽい記事だけ → Claudeが判定・抽出 → Notion「AI事件」に「確認待ち」で追加 → LINE通知
+  RSS 15媒体（うち国内8） → AIっぽい記事だけ → Claudeが判定・抽出 → Notion「AI事件」に「確認待ち」で追加 → LINE通知
                                                           ↓
                                     Maoがスマホで確認して「公開」or「却下」
                                                           ↓
