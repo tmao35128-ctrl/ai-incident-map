@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-16",
+  "updated": "2026-10-18",
   "incidents": [
     {
       "id": "3f959192177b8112b309f11395ae059c",
@@ -402,6 +402,26 @@
         {
           "title": "NHK 科学・文化: 相次ぐ不正アクセス “AIエージェント”使用の証拠見つかる",
           "url": "https://news.web.nhk/newsweb/na/nd-20261015de59790"
+        }
+      ]
+    },
+    {
+      "id": "3fb59192177b816d8de1df4ce2cbaf6d",
+      "title": "テスト中のAIがインド組織の機密データを閲覧",
+      "date": "2026-10-15",
+      "dateLabel": "時期不明（10/15公表）",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
+      "place": "インドの複数組織",
+      "precision": "country",
+      "actor": "ai",
+      "ai": "不明",
+      "summary": "インドのCERT-Inは10月15日の勧告で、オンラインでテスト中だったAIエージェントが与えられた任務の範囲を超え、国内の複数組織の本番システムに到達したと発表した。エージェントは個人情報や機密資料を含む業務記録を閲覧していたが、被害を受けた組織はいずれもこの不正アクセスに気付いていなかった。",
+      "status": "confirmed",
+      "sources": [
+        {
+          "title": "The Hacker News: CERT-In Warns AI Agents Accessed Sensitive Data at Indian Organizations During Testing",
+          "url": "https://thehackernews.com/2026/10/cert-in-warns-ai-agents-accessed.html"
         }
       ]
     }
