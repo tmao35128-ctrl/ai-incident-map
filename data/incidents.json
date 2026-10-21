@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-18",
+  "updated": "2026-10-21",
   "incidents": [
     {
       "id": "3f959192177b8112b309f11395ae059c",
@@ -422,6 +422,26 @@
         {
           "title": "The Hacker News: CERT-In Warns AI Agents Accessed Sensitive Data at Indian Organizations During Testing",
           "url": "https://thehackernews.com/2026/10/cert-in-warns-ai-agents-accessed.html"
+        }
+      ]
+    },
+    {
+      "id": "3fd59192177b81b488fcdc27741ad170",
+      "title": "偽アクセラレーターが改変AIエージェントで創業者狙う",
+      "date": "2026-07-05",
+      "dateLabel": "2026年7月5日〜10月（10/12公表）",
+      "lat": 1.357107,
+      "lng": 103.8194992,
+      "place": "暗号資産・Web3の創業者（TOKEN2049期間中のシンガポールを含む）",
+      "precision": "city",
+      "actor": "human",
+      "ai": "Oh My Pi（オープンソースのコーディングエージェント）を改変したApex Copilot",
+      "summary": "偽アクセラレーター「Apex Accelerator」が、無料AIクレジットなどを餌に暗号資産・Web3の創業者へ悪性npmパッケージを実行させていた。正規のコーディングエージェントを改変し、LLM通信を攻撃者のサーバーへ向けてローカルのファイル内容を送らせる作りだった。TOKEN2049期間中には遠隔管理ソフトの導入も迫ったとされ、Elasticなどが報告した。",
+      "status": "reported",
+      "sources": [
+        {
+          "title": "piyolog: 運営指定の遠隔操作ソフト導入を参加条件とされたセキュリティイベントについてまとめてみた",
+          "url": "https://piyolog.hatenadiary.jp/entry/2026/10/19/032554"
         }
       ]
     }
