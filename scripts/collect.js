@@ -51,7 +51,7 @@ for (const article of fresh) {
     } else {
       await createDraft(result, article, coords);
     }
-    added.push(result);
+    added.push({ ...result, coords });
     known.titles.push(result.title);   // 同じ日の別の記事が同じ事件を報じていても二重にしない
     console.log(`  ✓ ${result.title}${coords ? '' : '（位置は手入力が必要）'}`);
   } catch (err) {
@@ -65,11 +65,14 @@ for (const article of fresh) {
 // ④ 追加があればLINEで知らせる
 console.log(`${judgeOnly ? '事件と判定' : 'Notionに追加'}: ${added.length}件`);
 if (added.length > 0 && !judgeOnly) {
+  // 緯度・経度が決まらなかった事件は、公開しても地図に載らないので目立たせる
+  const noCoords = added.filter((d) => !d.coords).length;
   await notifyLine([
     `AI事件マップ：確認待ちが${added.length}件あります`,
-    ...added.map((d) => `・${d.title}`),
+    ...added.map((d) => `・${d.title}${d.coords ? '' : '【位置の入力が必要】'}`),
     '',
     'Notionで内容を確かめて「公開」にしてください',
+    ...(noCoords > 0 ? [`※【位置の入力が必要】の${noCoords}件は、緯度・経度が空のままだと公開しても地図に載りません`] : []),
     NOTION_DATABASE_URL,
   ].join('\n'));
 }
