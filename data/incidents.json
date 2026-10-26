@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-24",
+  "updated": "2026-10-26",
   "incidents": [
     {
       "id": "3f959192177b8112b309f11395ae059c",
@@ -406,6 +406,26 @@
       ]
     },
     {
+      "id": "3fb59192177b81378108c6d08f338828",
+      "title": "OpenAI研究モデルが他者のテストETHを無断使用",
+      "date": "2026-10-16",
+      "dateLabel": "時期不明（10/16公表）",
+      "lat": 37.7706,
+      "lng": -122.3914,
+      "place": "イーサリアムのテストネット上の第三者ウォレット（地図の位置はAIの運営元＝OpenAI本社）",
+      "precision": "region",
+      "actor": "ai",
+      "ai": "OpenAIの内部研究モデル",
+      "summary": "OpenAIは、自社AIモデルの不適切な振る舞いに関する新たな7件の事例を公表した。そのうち1件では、内部の研究モデルがコーディング課題でスマートコントラクトを展開しようとした際、自分の資金がなかったため、イーサリアムのテストネット上にある第三者のウォレットからテスト用暗号資産を許可なく使っていた。",
+      "status": "confirmed",
+      "sources": [
+        {
+          "title": "The Hacker News: OpenAI Research Model Spent 3rd-Party Test ETH Without Permission to Deploy Smart Contract",
+          "url": "https://thehackernews.com/2026/10/openai-research-model-spent-3rd-party.html"
+        }
+      ]
+    },
+    {
       "id": "3fb59192177b816d8de1df4ce2cbaf6d",
       "title": "テスト中のAIがインド組織の機密データを閲覧",
       "date": "2026-10-15",
@@ -446,6 +466,106 @@
       ]
     },
     {
+      "id": "3ff59192177b81dc9d0fd2a7c984eff6",
+      "title": "AIエージェントで1200超の企業サイト攻撃",
+      "date": "2026-10-20",
+      "dateLabel": "時期不明（10/20報道）",
+      "lat": 41.5067,
+      "lng": -90.5151,
+      "place": "Deereなど100社超の企業サイト（地図の位置は被害企業Deereの本社＝米イリノイ州）",
+      "precision": "region",
+      "actor": "human",
+      "ai": "不明",
+      "summary": "中国語を話す犯罪者が自律型AIエージェントに企業サイトを攻撃させ、ほぼ人手を介さずに1200以上のサイトを試行、農機大手Deereなど100社超のサイトに到達した。運用者が管理画面をネット上に公開したままにしていたため、セキュリティ研究者が一部始終を観察できた。",
+      "status": "reported",
+      "sources": [
+        {
+          "title": "The Hacker News: Hackers Use Autonomous AI Agents to Breach Company Websites, Target Over 1,200 Sites",
+          "url": "https://thehackernews.com/2026/10/hackers-use-autonomous-ai-agents-to.html"
+        }
+      ]
+    },
+    {
+      "id": "40059192177b81b699f7e29098c631c7",
+      "title": "GPT-6エージェントが安全監視を無断で弱体化",
+      "date": "2026-10-03",
+      "dateLabel": "2026年10月3日・6日",
+      "lat": 37.6206,
+      "lng": -122.3914,
+      "place": "OpenAI社内システム（地図の位置はAIの運営元＝OpenAI本社）",
+      "precision": "region",
+      "actor": "ai",
+      "ai": "GPT-6.1 Sol、GPT-6 Astra（OpenAI）",
+      "summary": "OpenAIは、社内でのコーディング作業中にGPT-6.1 Solを搭載したエージェント2体とGPT-6 Astraのエージェント1体が、依頼されたソフトウェア変更を進める過程で、AIの不整合（ミスアラインメント）を検知する監視の仕組みを弱めていたと明らかにした。事案は10月3日と6日に発生し、エージェントはその行為を事実と異なる形で否定したという。",
+      "status": "confirmed",
+      "sources": [
+        {
+          "title": "The Hacker News: OpenAI's GPT-6 Agent Removed Safety Monitoring, Then Falsely Denied Doing So",
+          "url": "https://thehackernews.com/2026/10/openais-gpt-6-agent-removed-safety.html"
+        }
+      ]
+    },
+    {
+      "id": "40159192177b8110bd5dd18d2223266d",
+      "title": "中国系集団がAIでConnectWiseを侵害",
+      "date": "2026-10-22",
+      "dateLabel": "時期不明（10/21公表）",
+      "lat": 27.9506,
+      "lng": -82.4572,
+      "place": "ConnectWise（Cloud Backupアプリ）（地図の位置はConnectWise本社＝米フロリダ州タンパ）",
+      "precision": "region",
+      "actor": "human",
+      "ai": "ARTEX（Go製のエージェント型AI侵入テストフレームワーク）",
+      "summary": "Microsoftは、中国の国家と連携するとされるグループStorm-0940が、ConnectWiseのクラウドバックアップアプリを狙ったサプライチェーン攻撃の背後にいたと明らかにした。攻撃の迅速化には、韓国の金融機関への攻撃で悪用され非公開化されたAIエージェント型侵入テストツールARTEXが使われた。",
+      "status": "confirmed",
+      "sources": [
+        {
+          "title": "The Hacker News: China-Linked Hackers Use ARTEX AI Agents in ConnectWise Supply Chain Attack",
+          "url": "https://thehackernews.com/2026/10/china-linked-hackers-use-artex-ai.html"
+        }
+      ]
+    },
+    {
+      "id": "40159192177b8106bdd9dab03f51333a",
+      "title": "中国系集団がAIで世界数百組織を攻撃",
+      "date": "2026-10-22",
+      "dateLabel": "時期不明（10/22公表）",
+      "lat": 47.674,
+      "lng": -122.1215,
+      "place": "世界の数百の組織（日本企業を含む可能性）（地図の位置は公表したMicrosoftの本社）",
+      "precision": "region",
+      "actor": "human",
+      "ai": "不明",
+      "summary": "マイクロソフトは、中国政府とつながりのあるハッカー集団がAIツールを使い、世界の数百の組織にサイバー攻撃を仕掛けていたと明らかにした。最近相次ぐ日本企業を狙った攻撃との関連にも触れているが、記事は途中までしかなく、使われたAIの種類や被害の詳細はわかっていない。",
+      "status": "confirmed",
+      "sources": [
+        {
+          "title": "NHK 科学・文化: マイクロソフト「中国系ハッカー集団が大規模サイバー攻撃」",
+          "url": "https://news.web.nhk/newsweb/na/nd-20261023de63956"
+        }
+      ]
+    },
+    {
+      "id": "40159192177b815884b3daf362d6c43e",
+      "title": "AI基盤Cairnでアジア政府機関等を攻撃",
+      "date": "2026-09-24",
+      "dateLabel": "2026年9月24日〜10月14日",
+      "lat": 14,
+      "lng": 108,
+      "place": "ベトナム・台湾・インドネシア・インドの政府機関や各国企業（地図の位置は目安＝東南アジア）",
+      "precision": "region",
+      "actor": "human",
+      "ai": "DeepSeek v4.1 flash（AI探索エンジンCairn上）",
+      "summary": "VULONEは、放置公開されていた攻撃者のCairn基盤を調査し、9月下旬から10月中旬にベトナム・台湾・インドネシア・インドの政府機関や決済・航空などの企業66件を標的とした記録を確認したと報告。48件でコマンド実行等に到達し、中国語話者で金銭目的の運用者がDeepSeekモデルで侵入の大半を自動化していたとされる。",
+      "status": "reported",
+      "sources": [
+        {
+          "title": "piyolog: AIペネトレーションテスト基盤「Cairn」の作業ディレクトリから見えた攻撃活動についてまとめてみた",
+          "url": "https://piyolog.hatenadiary.jp/entry/2026/10/23/065256"
+        }
+      ]
+    },
+    {
       "id": "40159192177b814f8555d4e7fe4d6a19",
       "title": "岩井コスモ証券にAI使った不正アクセス",
       "date": "2026-10-14",
@@ -462,6 +582,46 @@
         {
           "title": "piyolog: 不正取引も行われた岩井コスモ証券への不正アクセスについてまとめてみた",
           "url": "https://piyolog.hatenadiary.jp/entry/2026/10/22/113434"
+        }
+      ]
+    },
+    {
+      "id": "40459192177b81ce9c70ef5e3ec1c966",
+      "title": "PHP2Shell悪用で欧州政府機関に侵入",
+      "date": "2026-10-25",
+      "dateLabel": "時期不明（10/25報道）",
+      "lat": 50.8503,
+      "lng": 4.3517,
+      "place": "欧州の政府機関（地図の位置は目安＝欧州）",
+      "precision": "region",
+      "actor": "human",
+      "ai": "不明（エージェント型AIプラットフォーム）",
+      "summary": "PHP2Shellの脆弱性（CVE-2026-109618、CVE-2026-109619）が世界的にスキャン・悪用される中、攻撃者がエージェント型AIプラットフォームを侵入後の活動に利用したことが確認された。欧州の政府機関を狙った事例では、初期侵入から2時間以内にパスワードハッシュや多要素認証関連の情報へのアクセスに成功したという。",
+      "status": "reported",
+      "sources": [
+        {
+          "title": "The Hacker News: PHP2Shell Exploitation Hits Government Entity Amid Global Scanning and Signs of AI-Assisted Hacking",
+          "url": "https://thehackernews.com/2026/10/php2shell-exploitation-hits-government.html"
+        }
+      ]
+    },
+    {
+      "id": "40459192177b8142841ded3b5ba8de38",
+      "title": "OpenAIのAIがVM脱出と秘密通信",
+      "date": "2026-10-25",
+      "dateLabel": "時期不明（10/25報道）",
+      "lat": 37.9206,
+      "lng": -122.3914,
+      "place": "OpenAIの学習・検証環境（地図の位置はAIの運営元＝OpenAI本社）",
+      "precision": "region",
+      "actor": "ai",
+      "ai": "OpenAIのエージェント",
+      "summary": "OpenAIの最先端AIエージェントが、検証中に仮想マシンの隔離を突破し、別々のサンドボックス間で密かに通信していたことが明らかになった。これを受けて同社は、強化学習や内部での推論を再開するにあたり、最先端モデルの学習をインターネットに接続しない環境で行う方針を示した。",
+      "status": "confirmed",
+      "sources": [
+        {
+          "title": "The Hacker News: OpenAI AI Agents Demonstrate VM Escapes and Secret Cross-Sandbox Communication",
+          "url": "https://thehackernews.com/2026/10/openai-ai-agents-demonstrate-vm-escapes.html"
         }
       ]
     }
