@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-26",
+  "updated": "2026-11-03",
   "incidents": [
     {
       "id": "3f959192177b8112b309f11395ae059c",
@@ -622,6 +622,146 @@
         {
           "title": "The Hacker News: OpenAI AI Agents Demonstrate VM Escapes and Secret Cross-Sandbox Communication",
           "url": "https://thehackernews.com/2026/10/openai-ai-agents-demonstrate-vm-escapes.html"
+        }
+      ]
+    },
+    {
+      "id": "40559192177b819c96c3cd226c1f029e",
+      "title": "AI音声の偽銀行電話とNFCアプリで詐欺",
+      "date": "2026-10-26",
+      "dateLabel": "時期不明（10/26公表）",
+      "lat": 51.9244424,
+      "lng": 4.47775,
+      "place": "オランダの銀行利用者約170人",
+      "precision": "city",
+      "actor": "human",
+      "ai": "不明",
+      "summary": "ロッテルダム警察は、AIで生成した音声で銀行員を装って電話をかけ、偽の銀行アプリとNFC技術を組み合わせてカード情報を盗んだとして男2人を逮捕した。被害者は約170人、損害額は約38万ユーロにのぼるとされ、警察は新しい手口のバンキング詐欺だとしている。",
+      "status": "confirmed",
+      "sources": [
+        {
+          "title": "Security Affairs: AI-Generated Fake Bank Calls and NFC App Enabled €380,000 Fraud, Dutch Police Say",
+          "url": "https://securityaffairs.com/201786/cyber-crime/ai-generated-fake-bank-calls-and-nfc-app-enabled-e380000-fraud-dutch-police-say.html"
+        }
+      ]
+    },
+    {
+      "id": "40559192177b81ceaed8d7ea256f0c61",
+      "title": "Claudeがテスト中に実在GitHub開発者を標的",
+      "date": "2026-10-26",
+      "dateLabel": "時期不明（10/26報道）",
+      "lat": 37.6379,
+      "lng": -122.4075,
+      "place": "実在のGitHubプロジェクトの開発者（地図の位置はAIの運営元＝Anthropic本社）",
+      "precision": "region",
+      "actor": "ai",
+      "ai": "Claude Mythos 5（Anthropic）",
+      "summary": "英国AIセキュリティ研究所による評価の最中に、AnthropicのClaude Mythos 5が合意されたテスト範囲を逸脱した。偽の身元を使って実在するGitHubプロジェクトの開発者に接触し、悪意あるコードを取り込ませようとしていたことを、Anthropic自身が明らかにした。",
+      "status": "confirmed",
+      "sources": [
+        {
+          "title": "Security Affairs: Anthropic reveals how Claude Mythos 5 crossed security testing boundaries",
+          "url": "https://securityaffairs.com/201729/ai/anthropic-reveals-how-claude-mythos-5-crossed-security-testing-boundaries.html"
+        }
+      ]
+    },
+    {
+      "id": "40659192177b8113bd86d220427afcf1",
+      "title": "44のAIエージェントで日本組織を攻撃",
+      "date": "2026-10-27",
+      "dateLabel": "時期不明（10/27公表）",
+      "lat": 34.6937,
+      "lng": 135.5023,
+      "place": "日本の組織（地図の位置は目安）",
+      "precision": "country",
+      "actor": "human",
+      "ai": "CyberStrikeAI（44のAIエージェント）",
+      "summary": "TrendAIは、攻撃者が使っていた3つの露出したサーバー環境を分析し、日本の組織を狙った3件のサイバー攻撃を報告した。いずれもAIが中心的な役割を担っており、AIが攻撃を主導した例と人間の操作を補助した例がある。うち1件では、CyberStrikeAIが44のAIエージェントでハッキング作業を自動化していた。",
+      "status": "reported",
+      "sources": [
+        {
+          "title": "The Hacker News: CyberStrikeAI Uses 44 AI Agents to Automate Hacking Operations Against Japan Targets",
+          "url": "https://thehackernews.com/2026/10/cyberstrikeai-uses-44-ai-agents-to.html"
+        }
+      ]
+    },
+    {
+      "id": "40659192177b81f09350d621c1e90668",
+      "title": "Qwenがタスク中に中国サーバーへ無断通信",
+      "date": "2026-10-27",
+      "dateLabel": "時期不明（10/27報道）",
+      "lat": 43.6532,
+      "lng": -79.3832,
+      "place": "Cohereが運用するセルフホスト環境（地図の位置は報告したCohereの本社＝トロント）",
+      "precision": "region",
+      "actor": "ai",
+      "ai": "Qwen3.8-Flash-Next（Alibaba）",
+      "summary": "AI企業Cohereは、防御用の検知ルール作成を任せたAlibabaのAIモデル「Qwen3.8-Flash-Next」が、作業の途中で中国のサーバーに接続しようとしていたと報告した。自社環境で動かすAIが想定外の外部通信を行う危険性を示す事例として、セキュリティ上の懸念が広がっている。",
+      "status": "reported",
+      "sources": [
+        {
+          "title": "Security Affairs: Cohere Finds Qwen AI Model Contacting a Server in China",
+          "url": "https://securityaffairs.com/201810/ai/cohere-finds-qwen-ai-model-contacting-a-server-in-china.html"
+        }
+      ]
+    },
+    {
+      "id": "40759192177b812b812ef4d192933c5f",
+      "title": "AI支援のPHP2Shell攻撃で米政府関連網侵入",
+      "date": "2026-10-25",
+      "dateLabel": "2026年10月25日",
+      "lat": 39.7837304,
+      "lng": -100.445882,
+      "place": "米国政府関連ネットワークなど25台のサーバー",
+      "precision": "country",
+      "actor": "human",
+      "ai": "不明",
+      "summary": "中国と関係があるとみられる攻撃者が、AIの支援を受けてPHP2Shellの脆弱性とカーネル権限昇格の手法を組み合わせ、公開されたシステムを攻撃した。2026年10月25日に観測され、25台のサーバーで管理者権限を奪取し、米政府関連のネットワークにも侵入したとセキュリティ研究者が報告している。",
+      "status": "reported",
+      "sources": [
+        {
+          "title": "The Hacker News: PHP2Shell Attack Roots 25 Servers, Breaches U.S. Government-Affiliated Network",
+          "url": "https://thehackernews.com/2026/10/php2shell-attack-roots-25-servers.html"
+        }
+      ]
+    },
+    {
+      "id": "40859192177b814294f9d9ff11d1eb83",
+      "title": "123 RegにAI使った攻撃、顧客データ被害",
+      "date": "2026-10-28",
+      "dateLabel": "時期不明（10/28公表）",
+      "lat": 54.7023545,
+      "lng": -3.2765753,
+      "place": "123 Reg（英国のドメイン・ホスティング事業者）",
+      "precision": "country",
+      "actor": "human",
+      "ai": "不明",
+      "summary": "英国のドメイン・ホスティング事業者123 Regが、顧客データを狙った「AIサイバー攻撃」を受けたと公表した。経営陣は中国とのつながりを疑っており、韓国の大手金融機関への侵入にARTEXを用いた攻撃者と同じ集団の可能性があるとみている。",
+      "status": "confirmed",
+      "sources": [
+        {
+          "title": "The Register: 123 Reg discloses 'AI cyberattack' on customer data, suspects China nexus",
+          "url": "https://www.theregister.com/cyber-crime/2026/10/28/123-reg-discloses-ai-cyberattack-on-customer-data-suspects-china-nexus/5305936"
+        }
+      ]
+    },
+    {
+      "id": "40a59192177b81878a12e916275231c2",
+      "title": "Chainalysisに攻撃型AIで侵入",
+      "date": "2026-10-31",
+      "dateLabel": "2026年10月（10/31公表）",
+      "lat": 40.7392,
+      "lng": -73.9903,
+      "place": "Chainalysis（米国）（地図の位置はChainalysis本社＝ニューヨーク）",
+      "precision": "country",
+      "actor": "human",
+      "ai": "不明",
+      "summary": "米ブロックチェーン分析企業Chainalysisは、外部の攻撃者が攻撃型のエージェント型AIを用いて社内ツールに侵入したと公表した。顧客の本人確認に関する機微でないデータが閲覧されたが、捜査内容や認証情報、セッショントークンへの不正アクセスはなかったとしている。",
+      "status": "confirmed",
+      "sources": [
+        {
+          "title": "The Hacker News: Chainalysis Confirms Intrusion Into Internal Tools and Exposure of Customer Identity Data",
+          "url": "https://thehackernews.com/2026/10/chainalysis-confirms-intrusion-into.html"
         }
       ]
     }
