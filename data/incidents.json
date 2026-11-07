@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-03",
+  "updated": "2026-11-07",
   "incidents": [
     {
       "id": "3f959192177b8112b309f11395ae059c",
@@ -762,6 +762,86 @@
         {
           "title": "The Hacker News: Chainalysis Confirms Intrusion Into Internal Tools and Exposure of Customer Identity Data",
           "url": "https://thehackernews.com/2026/10/chainalysis-confirms-intrusion-into.html"
+        }
+      ]
+    },
+    {
+      "id": "40e59192177b8117bc1dcfa3ccf60a2b",
+      "title": "ChainstackにAI活用攻撃で侵入",
+      "date": "2026-11-03",
+      "dateLabel": "時期不明（11/3公表）",
+      "lat": 1.2945,
+      "lng": 103.8597,
+      "place": "Chainstack（ブロックチェーン基盤事業者）（地図の位置はChainstack本社＝シンガポール）",
+      "precision": "region",
+      "actor": "human",
+      "ai": "不明",
+      "summary": "ブロックチェーン基盤を提供するChainstackが、外部の攻撃者に本番インフラの一部へ不正アクセスされたと公表した。顧客データやパスワードハッシュが流出した可能性がある。この侵入は、前週に明らかになったAIを用いた大規模攻撃キャンペーンの一環とみられている。",
+      "status": "reported",
+      "sources": [
+        {
+          "title": "The Hacker News: Chainstack Reports Production Systems Breach Exposing Customer Data and Password Hashes",
+          "url": "https://thehackernews.com/2026/11/chainstack-reports-production-systems.html"
+        }
+      ]
+    },
+    {
+      "id": "40e59192177b81e198aaeaa5b08d20eb",
+      "title": "中国語話者がAIでアフリカ・中南米の教育機関攻撃",
+      "date": "2026-11-02",
+      "dateLabel": "時期不明（11/2公表）",
+      "lat": 2,
+      "lng": 20,
+      "place": "アフリカと中南米の教育機関（地図の位置は目安＝アフリカ。中南米でも被害）",
+      "precision": "region",
+      "actor": "human",
+      "ai": "不明",
+      "summary": "Kasperskyによると、中国語を話す攻撃者がアフリカと中南米の教育機関を標的とする作戦を展開した。人間が標的と目的を決め、実際に実行するコマンドの選択は大規模言語モデルに任せていた。同時期にCrowdStrikeが報告した中国系集団の攻撃とは別の作戦とみられるが、AIで攻撃を拡大・高速化する手口は共通している。",
+      "status": "reported",
+      "sources": [
+        {
+          "title": "Help Net Security: AI agents scale and speed up Chinese-linked attacks",
+          "url": "https://www.helpnetsecurity.com/2026/11/03/ai-powered-cyberattacks-artex-cyberstrikeai/"
+        }
+      ]
+    },
+    {
+      "id": "41059192177b81dfba5afc2f16e7d2c9",
+      "title": "AI支援集団がインド金融機関を攻撃",
+      "date": "2026-11-05",
+      "dateLabel": "時期不明（11/5報道）",
+      "lat": 22.3511148,
+      "lng": 78.6677428,
+      "place": "インドの銀行・金融・保険（BFSI）分野の組織",
+      "precision": "country",
+      "actor": "human",
+      "ai": "公開されているAI駆動の攻撃用セキュリティツール",
+      "summary": "インドのCERT-Inは、Crafty Falconと呼ぶ攻撃者が、公開されているAI駆動の攻撃用セキュリティツールを使い、国内の銀行・金融・保険分野の組織を狙っていると明らかにした。CERT-Inはこの活動を現在も続いている脅威と位置づけている。",
+      "status": "confirmed",
+      "sources": [
+        {
+          "title": "The Hacker News: CERT-In Flags AI-Driven Attacks as Backdoored ARTEX Exposes 62 Consoles to Root Access",
+          "url": "https://thehackernews.com/2026/11/backdoored-docker-image-for-artex-ai.html"
+        }
+      ]
+    },
+    {
+      "id": "41159192177b816c8549f64335957e68",
+      "title": "CEOなりすまし詐欺団がAIで1億ドル超詐取",
+      "date": "2026-11-06",
+      "dateLabel": "時期不明（11/6報道）",
+      "lat": 37.5,
+      "lng": -95.5,
+      "place": "米国の被害者（詳細不明）（地図の位置は目安＝米国）",
+      "precision": "country",
+      "actor": "human",
+      "ai": "不明",
+      "summary": "企業のCEOになりすました詐欺集団がAIを悪用し、合計1億ドルを超える資金をだまし取ったと米連邦当局が明らかにした。容疑者3人は欧州にいるとみられ、米国は身柄の引き渡しを進めている。使われたAIの種類や被害企業の詳細は公表されていない。",
+      "status": "confirmed",
+      "sources": [
+        {
+          "title": "The Record: CEO-spoofing scammers used AI to help steal more than $100 million, feds say",
+          "url": "https://therecord.media/ceo-spoofing-scammers-charged"
         }
       ]
     }
